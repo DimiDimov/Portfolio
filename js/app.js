@@ -28,9 +28,8 @@ var myApp = angular.module('myApp', ['ui.router'])
   		$scope.homePicture2 = data[1].PICTURE;
   		$scope.welcomeParagraph3 = data[2].WELCOME;
   		$scope.homePicture3 = data[2].PICTURE;
-
   });
-  $scope.number = 20
+  return false;
 })
 
 // About page controller: define $scope.about as a string
@@ -39,6 +38,7 @@ var myApp = angular.module('myApp', ['ui.router'])
   		$scope.introParagraphs = data[0].PARAGRAPH;
   		$scope.aboutPicture = data[0].PICTURE;
   });
+  return false;
 })
 
 // Content controller: define $scope.url as an image
@@ -53,6 +53,7 @@ var myApp = angular.module('myApp', ['ui.router'])
   		$scope.exampleThreePic = data[2].PICTURE;
     });
   $scope.linkToPolice = "http://students.washington.edu/ddimov/info343/2/police-shooting/";
+  return false;
 })
 
 
